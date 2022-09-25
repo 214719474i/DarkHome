@@ -6,9 +6,9 @@ using namespace std;
 using namespace cv;
 
 void main() {
-	Mat src = imread("G:\\aaaopenCV\\opencvlearning\\OpencvLearn-6.20\\image\\iu_pyrDown.jpg");
+	Mat src = imread("path");//璺緞璇疯嚜瀹氫箟鍝
 	if (src.empty()) {
-		cout << "文件打开失败..." << endl;
+		cout << "could not load this file..." << endl;
 		return;
 	}
 	Mat gray_src;
