@@ -14,7 +14,7 @@ void main() {
 		return;
 	}
 	pyrDown(src, src);//如果待检测图像太大，可以降采样
-	CascadeClassifier face_detector = CascadeClassifier("g:\\aaaopencv\\opencvlearning\\opencvlearn-6.20\\etc\\haarcascade_frontalface_default.xml");
+	CascadeClassifier face_detector = CascadeClassifier("/etc/haarcascade_frontalface_default.xml");
 	vector<Rect> face;
 	face_detector.detectMultiScale(src, face, 1.001, 100, 0, Size(70, 70), Size(100, 100));//, 1.001, 100, 0, Size(70, 70), Size(100,100)
 	Mat imageROI;
