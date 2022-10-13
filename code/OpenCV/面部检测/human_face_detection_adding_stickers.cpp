@@ -10,7 +10,7 @@ void main() {
 	Mat src = imread("path");
 	Mat insertImage = imread("stickers_path");
 	if (src.empty()) {
-		cout << "文件打开失败..." << endl;
+		cout << "could not load this file..." << endl;
 		return;
 	}
 	pyrDown(src, src);//如果待检测图像太大，可以降采样

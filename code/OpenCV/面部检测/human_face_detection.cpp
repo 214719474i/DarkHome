@@ -9,7 +9,7 @@ using namespace cv;
 void main() {
 	Mat src = imread("path");//加载图像，路径自定义
 	if (src.empty()) {//检查读取的图像文件是否成功
-		cout << "文件打开失败..." << endl;
+		cout << "could not load this file..." << endl;
 		return;
 	}
 	namedWindow("src", WINDOW_AUTOSIZE);//创建一个窗体
